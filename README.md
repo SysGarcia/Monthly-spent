@@ -1,52 +1,50 @@
-# Monthly-spent
+# Monthly-spent 📊
 
-![imagen](https://github.com/Wolfuliam/Monthly-spent/assets/147284006/b6161e66-cab0-482e-8a51-29f57e894799)
+## Overview 🌟
 
-## Overview
-
-Monthly-Spent is a Python application designed to track daily expenses and visualize them in a graph. This simple yet effective tool helps users keep an eye on their spending habits over the course of a month.
-## Features
-
-    Daily Expense Input: Allows users to input the amount spent each day.
-    Data Storage: Records daily expenses in a text file on the user's desktop.
-    Visualization: Generates a scatter plot graph to visualize spending over the month.
-
-## Requirements
-
+Monthly-Spent is a Python-powered finance-tracking app that paints a picture of your spending habits throughout the month. It's more than just numbers; it's about visual stories of your financial flow!
+Features 🛠️
+```
+    Daily Expense Input: Log your daily splurges or wise savings with ease.
+    Persistent Data Storage: Keeps track of every coffee, sandwich, or splurge securely on your desktop.
+    Visual Splendor: Transforms your expenses into a vibrant scatter plot, offering insights at a glance.
+```
+Requirements 📋
+```
     Python 3.x
-    Matplotlib library (for graphing)
+    Matplotlib library (for creating stunning visualizations)
+```
+Installation 🔧
+```
+    Make sure Python 3.x dances on your
+```
 
-## Installation
+system like a well-oiled machine.
+2. Summon Matplotlib into your realm with the incantation below:
 
-    Ensure Python 3.x is installed on your system.
-    Install Matplotlib if you haven't already. You can install it using pip:
-
-    bash
-
-    pip install matplotlib
-
-## Usage
-
-    Run the Monthly-Spent script.
-    When prompted, enter the amount you spent for the day. Ensure you enter a positive number.
-    The program will record your input in a file named daily.txt on your desktop.
-    It then generates and displays a graph showing your spending pattern over the month.
-
-## File Structure
-
-    daily.txt: This file is created on your desktop. It stores the daily spent amounts along with the corresponding dates.
-
-## Code Explanation
-
-* get_value(): Prompts the user for daily expense input and validates it.
-* get_desktop(): Determines the path to the user's desktop.
-* get_current_date(): Fetches the current date.
-* get_lines_document(): Reads the number of lines (entries) in daily.txt.
-* add_to_file(): Adds the new entry to daily.txt.
-* create_graph(): Generates and displays a graph using Matplotlib.
-* get_alltime_money(): Extracts the spent amounts from daily.txt.
-* get_alltime_days(): Extracts the dates from daily.txt.
-
-## Contribution
-
-Contributions to this project are welcome. Please fork the repository and submit a pull request with your proposed changes.
+```
+py - m pip install matplotlib
+```
+## Usage 🚀
+```
+    Unleash the power of Monthly-Spent by running the script.
+    Confess your daily financial indulgences when prompted. Be honest, no judgments!
+    Watch in awe as your monetary maneuvers are etched into the daily.txt on your digital desktop canvas.
+    Behold! A graph materializes, revealing the ebbs and flows of your fiscal journey through the month.
+```
+## File Structure 📁
+* daily.txt: A sacred ledger on your desktop, chronicling your expenditures and the dates they occurred.
+## Behind the Magic 🎩
+```
+    get_value(): A gentle nudge for your daily expense confession.
+    get_desktop(): A digital compass pointing to your desktop's heart.
+    get_current_date(): A temporal tracker, seizing the day (quite literally).
+    get_lines_document(): An eager librarian, tallying the records in daily.txt.
+    add_to_file(): The diligent scribe, etching your financial fates into the ledger.
+    create_graph(): The master artist, crafting a visual symphony from your spending notes.
+    get_alltime_money(): A treasure hunter, delving into daily.txt to unearth your spent gold.
+    get_alltime_days(): A historian, sifting through daily.txt for the days of your economic adventures.
+```
+## Contribution 🤝
+### Wish to contribute? Fabulous! Fork this repository, conjure up your magic in code, and create a pull request with your enchantments. All manner of wizardry is welcome!
+![imagen](https://github.com/Wolfuliam/Monthly-spent/assets/147284006/b6161e66-cab0-482e-8a51-29f57e894799)
