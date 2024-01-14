@@ -1,5 +1,7 @@
 # Monthly-spent
 
+![imagen](https://github.com/Wolfuliam/Monthly-spent/assets/147284006/5046e498-90ee-4765-96ce-cb0fa61bf93c)
+
 ## Overview
 
 Monthly-Spent is a Python application designed to track daily expenses and visualize them in a graph. This simple yet effective tool helps users keep an eye on their spending habits over the course of a month.
