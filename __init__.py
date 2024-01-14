@@ -148,9 +148,9 @@ def main() -> None:
     4. Extract dates and summed money for graphing.
     5. Create and display the graph with this data.
     """
-    """spent = get_value()
+    spent = get_value()
     current_day = get_current_date()
-    add_to_file(current_day, spent)"""
+    add_to_file(current_day, spent)
     
     daily_data = read_document()
     x_graph = list(daily_data.keys())  # Extracted days for the x-axis
