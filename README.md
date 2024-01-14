@@ -38,12 +38,12 @@ Monthly-Spent is a Python application designed to track daily expenses and visua
 
 * get_value(): Prompts the user for daily expense input and validates it.
 * get_desktop(): Determines the path to the user's desktop.
-get_current_date(): Fetches the current date.
-get_lines_document(): Reads the number of lines (entries) in daily.txt.
-add_to_file(): Adds the new entry to daily.txt.
-create_graph(): Generates and displays a graph using Matplotlib.
-get_alltime_money(): Extracts the spent amounts from daily.txt.
-get_alltime_days(): Extracts the dates from daily.txt.
+* get_current_date(): Fetches the current date.
+* get_lines_document(): Reads the number of lines (entries) in daily.txt.
+* add_to_file(): Adds the new entry to daily.txt.
+* create_graph(): Generates and displays a graph using Matplotlib.
+* get_alltime_money(): Extracts the spent amounts from daily.txt.
+* get_alltime_days(): Extracts the dates from daily.txt.
 
 ## Contribution
 
