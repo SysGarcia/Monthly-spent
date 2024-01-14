@@ -16,7 +16,7 @@ Requirements 📋
 ```
 Installation 🔧
 ```
-    Make sure Python 3.x dances on your
+Make sure Python 3.x dances on your computer
 ```
 
 system like a well-oiled machine.
