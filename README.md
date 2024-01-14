@@ -9,18 +9,15 @@ Features 🛠️
     Persistent Data Storage: Keeps track of every coffee, sandwich, or splurge securely on your desktop.
     Visual Splendor: Transforms your expenses into a vibrant scatter plot, offering insights at a glance.
 ```
-Requirements 📋
+## Requirements 📋
 ```
     Python 3.x
     Matplotlib library (for creating stunning visualizations)
 ```
-Installation 🔧
+## Installation 🔧
 
-+ Make sure Python 3.x dances on your computer
-
-system like a well-oiled machine.
-2. Summon Matplotlib into your realm with the incantation below:
-
++ Make sure Python 3.x dances on your system like a well-oiled machine.
++ Summon Matplotlib into your realm with the incantation below:
 ```
 py - m pip install matplotlib
 ```
