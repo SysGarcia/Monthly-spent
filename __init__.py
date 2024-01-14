@@ -1,9 +1,9 @@
 from collections import defaultdict
 from datetime import date, datetime
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 from matplotlib.dates import date2num
 import os
+import matplotlib.dates as mdates
 
 def get_value() -> float:
     """
@@ -53,19 +53,37 @@ def create_graph(x, y) -> None:
     x: List of dates (strings).
     y: Corresponding list of amounts spent.
     """
+    
     # Convert string dates to datetime objects and then to matplotlib date format
-    x = [date2num(datetime.strptime(date_str, "%Y-%m-%d")) for date_str in x]
+    x_dates = [datetime.strptime(date_str, "%Y-%m-%d") for date_str in x]
+    x = [date2num(date) for date in x_dates]  # Convert datetime objects to matplotlib date format
 
-    plt.axes().set_facecolor("#1CC4AF")
-    plt.gca().xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
-    plt.gca().xaxis.set_major_locator(mdates.DayLocator())
+    # Create a larger figure to give more space for dates
+    plt.figure(figsize=(15, 5))  # You can adjust the size as needed
+
+    # Plotting
+    plt.axes().set_facecolor("#b5b5b5")
+    
+    locator = mdates.MonthLocator()
+    # Set the formatter to DateFormatter to specify the format you want for the dates
+    formatter = mdates.DateFormatter('%Y-%b')
+
+    plt.gca().xaxis.set_major_locator(locator)
+    plt.gca().xaxis.set_major_formatter(formatter)
     plt.xlabel('Day')
     plt.ylabel('Money Spent')
     plt.title("Money Spent This Month")
-    plt.scatter(x, y, s=30, color="red")
-    plt.plot(x, y, color="red")
-    plt.gcf().autofmt_xdate()  # Rotate date labels
+
+    # Plot the scatter and line graph
+    plt.scatter(x, y, s=30, color="#11205c")
+    plt.plot(x, y, color="#11205c",linestyle='dashed')
+
+    # Annotate each data point with the day of the month
+    for i, (date, value) in enumerate(zip(x_dates, y)):
+        plt.annotate(date.strftime("%d"), (float(x[i]), float(value)), textcoords="offset points", xytext=(0, 3), color="#11205c", ha='center', va='bottom')
+
     plt.legend(['Expenses'])
+    plt.tight_layout()  # Adjust the padding between and around subplots
     plt.show()
 
 def read_document() -> dict:
@@ -130,9 +148,9 @@ def main() -> None:
     4. Extract dates and summed money for graphing.
     5. Create and display the graph with this data.
     """
-    spent = get_value()
+    """spent = get_value()
     current_day = get_current_date()
-    add_to_file(current_day, spent)
+    add_to_file(current_day, spent)"""
     
     daily_data = read_document()
     x_graph = list(daily_data.keys())  # Extracted days for the x-axis
