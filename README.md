@@ -35,8 +35,8 @@ py - m pip install matplotlib
 * daily.txt: A sacred ledger on your desktop, chronicling your expenditures and the dates they occurred.
 ## Behind the Magic 🎩
 
-** get_value(): A gentle nudge for your daily expense confession.
-** get_desktop(): A digital compass pointing to your desktop's heart.
+**get_value(): A gentle nudge for your daily expense confession.
+*get_desktop(): A digital compass pointing to your desktop's heart.
 ** get_current_date(): A temporal tracker, seizing the day (quite literally).
 ** get_lines_document(): An eager librarian, tallying the records in daily.txt.
 ** add_to_file(): The diligent scribe, etching your financial fates into the ledger.
