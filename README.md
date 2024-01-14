@@ -1,6 +1,6 @@
 # Monthly-spent
 
-![imagen](https://github.com/Wolfuliam/Monthly-spent/assets/147284006/5046e498-90ee-4765-96ce-cb0fa61bf93c)
+![imagen](https://github.com/Wolfuliam/Monthly-spent/assets/147284006/b6161e66-cab0-482e-8a51-29f57e894799)
 
 ## Overview
 
